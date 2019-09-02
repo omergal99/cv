@@ -1,0 +1,72 @@
+.header {
+  font-size: 1.5em;
+  position: relative;
+  color: $clr6;
+  &:after {
+    @include pseudo;
+    @include background-size(cover);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url(../../img/backgrounds/header.png);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+  }
+  h1 {
+    background-color: $clr7;
+    background-clip: content-box;
+    padding: 3rem 0.5rem 1rem 0.5rem;
+  }
+  .my-picture {
+    position: relative;
+    height: 30vw;
+    width: 30vw;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    .wrap-color {
+      height: 100%;
+      overflow: hidden;
+      border-radius: 2px;
+      &:before {
+        @include pseudo;
+        content: "";
+        position: relative;
+        border-left: 300px solid #183175;
+        border-top: 300px solid #cd4141;
+        z-index: -15;
+      }
+      .wrap-img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+          transition: height 0.6s;
+          margin: -22% 0 0 0;
+          height: 45vw;
+          width: 30vw;
+          max-width: 300px;
+          max-height: 450px;
+          min-width: 200px;
+          min-height: 300px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  h2,
+  p {
+    background-color: $clr7;
+    background-clip: content-box;
+    padding: 0 0.5rem 2rem;
+    direction: rtl;
+  }
+}

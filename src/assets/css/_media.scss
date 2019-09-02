@@ -1,0 +1,55 @@
+/************************** Tablet and Desktop **************************/
+
+@media (min-width: 768px) {
+  .my-apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 10px;
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: center;
+    // column-gap: 16px;
+    // display: block;
+    margin: 0 auto;
+
+    // .my-app {
+      // flex-basis: 600px;
+      // flex-shrink: 2;
+      //  flex-grow: 3;
+      // break-inside: avoid;
+    // }
+  }
+}
+// @media (min-width: 768px) and (max-width: 1023px) {
+//   .my-apps {
+    // column-count: 2;
+//   }
+// }
+
+@media (min-width: 1024px) and (max-width: 1699px) {
+  .my-apps {
+    // column-count: 3;
+    max-width: 1344px;
+  }
+}
+@media (min-width: 1700px) and (max-width: 1919px) {
+  .my-apps {
+    // column-count: 4;
+    max-width: 1700px;
+  }
+}
+@media (min-width: 1920px) and (max-width: 2399px) {
+  .my-apps {
+    // column-count: 4;
+    max-width: 1820px;
+  }
+}
+@media (min-width: 2400px) {
+  .my-apps {
+    // column-count: 4;
+    max-width: 1820px;
+
+  }
+}

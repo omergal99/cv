@@ -1,0 +1,100 @@
+.my-apps {
+  padding: 1rem 0.5rem 0;
+  margin: 0;
+  .my-app {
+    padding: 0 0 0.4em 0;
+    .wrap-img {
+      padding: 0 0 0 10%;
+      position: relative;
+      .desktop {
+        display: block;
+        max-height: 600px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        border: 3px solid maroon;
+        border-radius: 4px;
+      }
+      .mobile {
+        height: 70%;
+        position: absolute;
+        left: 0;
+        top: 15%;
+        border: 2px solid maroon;
+        border-radius: 4px;
+      }
+    }
+    .summary {
+      padding: 0.5rem 0 0 0;
+      width: 100%;
+      position: relative;
+      .container {
+        position: relative;
+        color: black;
+        .explain {
+          background-color: #faf6f6f2;
+          border-radius: 4px;
+          position: relative;
+          top: -40px;
+          left: 0;
+          border: 2px solid #165c59;
+          width: 80%;
+          margin: 0 10px auto auto;
+          h4 {
+            padding: 4px 0 2px 0px;
+          }
+          p {
+            min-height: 5em;
+            text-align: left;
+            padding: 0px 4px 2px;
+            white-space: pre-wrap;
+            &:before {
+              content: "";
+              float: right;
+              width: 80px;
+              height: var(--h);
+              min-height: 100%;
+              shape-outside: polygon(0 calc(100% - 38px), 100% calc(100% - 38px), 100% 100%, 0 100%);
+            }
+          }
+          .links {
+            position: absolute;
+            bottom: -2px;
+            right: 2px;
+            a {
+              display: inline-block;
+              margin: 0px 2px;
+              &:hover img{
+                background-color: #bff4f1;
+              }
+            }
+            img {
+              border-radius: 50%;
+              transition: background-color 0.2s ease;
+              width: 34px;
+              height: auto;
+            }
+          }
+        }
+        .tags {
+          color: white;
+          position: absolute;
+          display: flex;
+          flex-wrap: wrap;
+          align-self: start;
+          margin: 6px 0 0 0;
+          max-height: 40px;
+          overflow: auto;
+          span {
+            display: inline-block;
+            font-size: 0.8em;
+            background-color: #2c8581;
+            margin: 1.5px 2px;
+            padding: 1px 4px;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+}
