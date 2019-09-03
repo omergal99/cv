@@ -5,7 +5,7 @@ function BackgroundPreview({ timePoint }) {
   return (
     <li className="time-point">
       <h3 className="title">{timePoint.title}</h3>
-      <div className="hexagon">
+      <div className="hexagon" style={{backgroundBlendMode: timePoint.blendMode}}>
         <div className="text flex space-center align-center">
           <h3>{timePoint.subtitle}
           </h3>

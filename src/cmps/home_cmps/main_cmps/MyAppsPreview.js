@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 function MyAppsPreview({ project }) {
 
   const pText = useRef(null);
-  const [pHeight, setPHeight] = useState('35px');
   const tags = project.tags.map(tag => {
     return <span key={tag}>{tag}</span>
   })
@@ -11,7 +10,7 @@ function MyAppsPreview({ project }) {
   useEffect(() => {
     pText.current.style.setProperty('--h', pText.current.clientHeight + 2 + 'px');
     const updatePHeight = () => {
-        pText.current.style.setProperty('--h', pText.current.clientHeight + 2 + 'px');
+      pText.current.style.setProperty('--h', pText.current.clientHeight + 2 + 'px');
     };
     var resizeId;
     window.addEventListener('resize', () => {

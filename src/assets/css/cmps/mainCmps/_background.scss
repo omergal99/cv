@@ -7,16 +7,18 @@
       display: inline-block;
     }
     .hexagon {
-      position: relative;
-      max-width: 200px;
-      max-height: 173.2px;
-      max-width: 300px;
-      max-height: 259.8px;
-      width: 80vw;
-      height: 69.28vw;
-      margin: 0 auto;
-      background-color: #c2aada;
       clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+      background-image: url("../../../img/backgrounds/my background/hexigon background.png");
+      background-position: top;
+      background-size: cover;
+      background-color: #c2aada;
+      color: white;
+      position: relative;
+      max-width: 250px;
+      max-height: 216.5px;
+      width: 50vw;
+      height: 43.3vw;
+      margin: 0 auto 6px auto;
       .text {
         direction: rtl;
         white-space: pre-wrap;
@@ -29,8 +31,15 @@
       }
     }
     .description {
+      text-align: right;
       direction: rtl;
       white-space: pre-wrap;
+      width: 70vw;
+      max-width: 450px;
+      margin: 0 auto;
+      background-color: #d8d4d7;
+      padding: 3px 6px;
+      border-radius: 4px;
     }
   }
 }
