@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-site/static/css/main.a60ce95c.chunk.css",
+    "main.js": "/my-site/static/js/main.cf6e21cb.chunk.js",
+    "main.js.map": "/my-site/static/js/main.cf6e21cb.chunk.js.map",
+    "runtime~main.js": "/my-site/static/js/runtime~main.96580cd8.js",
+    "runtime~main.js.map": "/my-site/static/js/runtime~main.96580cd8.js.map",
+    "static/js/2.c0514155.chunk.js": "/my-site/static/js/2.c0514155.chunk.js",
+    "static/js/2.c0514155.chunk.js.map": "/my-site/static/js/2.c0514155.chunk.js.map",
+    "index.html": "/my-site/index.html",
+    "precache-manifest.f933f61a9a8c4d3d18bd225d5d6d4e93.js": "/my-site/precache-manifest.f933f61a9a8c4d3d18bd225d5d6d4e93.js",
+    "service-worker.js": "/my-site/service-worker.js",
+    "static/css/main.a60ce95c.chunk.css.map": "/my-site/static/css/main.a60ce95c.chunk.css.map",
+    "static/media/App.scss": "/my-site/static/media/hexigon background.712d9273.png"
+  }
+}
