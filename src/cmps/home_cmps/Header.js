@@ -13,7 +13,7 @@ function Header() {
         </div>
       </div>
       <h2>מפתח אפליקציות ואתרים <span style={{ display: 'inline-block' }}>Fullstack Developer</span></h2>
-      <p>בואו נתחיל בכמה פרוייקטים</p>
+      <p>מוזמנים להסתכל 😋</p>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 .knowledge {
-  background-color: #b6a8e987;
+  background-color: #262020c9;
   .fields {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -10,7 +10,7 @@
     border-radius: 4px;
     .field {
       padding: 10px;
-      background-color: #8abcb442;
+      background: linear-gradient(#faefd6, #c8b45f);
       font-size: 1.2rem;
       display: grid;
       grid-template-rows: 1.5fr repeat(2, 1fr);
