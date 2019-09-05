@@ -1,55 +1,171 @@
 /************************** Tablet and Desktop **************************/
 
+@media (min-width: 64px) and (max-width: 279px) {
+  html {
+    font-size: 10px;
+  }
+  .background {
+    font-size: 8px;
+  }
+}
+@media (min-width: 280px) and (max-width: 349px) {
+  html {
+    font-size: 12px;
+  }
+  .background {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 400px) {
+  html {
+    font-size: 14px;
+  }
+  .background {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 500px) {
+  .background {
+    font-size: 22px;
+    .time-points {
+      .time-point {
+        .description {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .my-apps {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     grid-gap: 10px;
-
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: center;
-    // justify-content: center;
-    // column-gap: 16px;
-    // display: block;
     margin: 0 auto;
-
-    // .my-app {
-      // flex-basis: 600px;
-      // flex-shrink: 2;
-      //  flex-grow: 3;
-      // break-inside: avoid;
-    // }
   }
 }
-// @media (min-width: 768px) and (max-width: 1023px) {
-//   .my-apps {
-    // column-count: 2;
-//   }
-// }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  // .social-networks {
+  //   .networks {
+  //     .network {
+  //       max-width: 35%;
+  //     }
+  //   }
+  // }
+}
+
+@media (min-width: 1024px) {
+  .background {
+    .time-points {
+      display: flex;
+      justify-content: space-evenly;
+      direction: rtl;
+      max-width: 1540px;
+      margin: 0 auto;
+      .time-point {
+        .description {
+          width: 25vw;
+        }
+      }
+    }
+  }
+  .social-networks {
+    .networks {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: baseline;
+      max-width: 1540px;
+      margin: 0 auto;
+      .network {
+      .net-icon {
+        a {
+          img {
+            padding: 4px 6px;
+              border-bottom: none;
+          }
+          &:hover {
+            img {
+              padding: 4px 6px 2px;
+              border-bottom: 2px solid #539dff;
+            }
+          }
+        }
+      }
+    }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1539px) {
+  .background {
+    .time-points {
+      .time-point {
+        .description {
+          max-width: 400px;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1540px) {
+  .background {
+    .time-points {
+      .time-point {
+        .description {
+          max-width: 550px;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 1024px) and (max-width: 1699px) {
+  html {
+    font-size: 18px;
+  }
   .my-apps {
-    // column-count: 3;
     max-width: 1344px;
   }
 }
+
 @media (min-width: 1700px) and (max-width: 1919px) {
+  html {
+    font-size: 20px;
+  }
   .my-apps {
-    // column-count: 4;
     max-width: 1700px;
   }
 }
 @media (min-width: 1920px) and (max-width: 2399px) {
+  html {
+    font-size: 22px;
+  }
   .my-apps {
-    // column-count: 4;
     max-width: 1820px;
   }
 }
 @media (min-width: 2400px) {
+  html {
+    font-size: 24px;
+  }
   .my-apps {
-    // column-count: 4;
     max-width: 1820px;
-
+  }
+  .background {
+    .time-points {
+      .time-point {
+        .description {
+          max-width: 650px;
+          font-size: 1.4em;
+        }
+      }
+    }
   }
 }

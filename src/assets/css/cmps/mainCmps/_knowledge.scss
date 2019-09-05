@@ -1,0 +1,22 @@
+.knowledge {
+  background-color: #b6a8e987;
+  .fields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(3, 1fr);
+    max-width: 800px;
+    padding: 28px 10px;
+    margin: 0 auto;
+    border-radius: 4px;
+    .field {
+      padding: 10px;
+      background-color: #8abcb442;
+      font-size: 1.2rem;
+      display: grid;
+      grid-template-rows: 1.5fr repeat(2, 1fr);
+      h3 {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -5,6 +5,8 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case 'setTimePoints':
       return action.payload;
+    case 'setSocialNetworks':
+      return action.payload;
     default:
       return state;
   }

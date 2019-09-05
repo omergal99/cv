@@ -4,15 +4,15 @@ import BackgroundPreview from './BackgroundPreview';
 
 function Background({ timePoints }) {
 
-  const showtimePoints = timePoints ?
+  const showTimePoints = timePoints ?
     timePoints.map(timePoint => <BackgroundPreview timePoint={timePoint} key={timePoint._id} />)
     : <div>'Wait time points..'</div>
 
   return (
     <div className="background">
-      <h2>My Backgound</h2>
+      <h2>מה הרקע שלי?</h2>
       <ul className="time-points">
-        {showtimePoints}
+        {showTimePoints}
       </ul>
     </div>
   );

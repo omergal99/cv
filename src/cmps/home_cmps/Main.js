@@ -15,19 +15,21 @@ function Main() {
   const dispatch = useDispatch();
   const projects = useSelector(state => state.projectsStore.projects);
   const timePoints = useSelector(state => state.omerStore.timePoints);
+  const socialNetworks = useSelector(state => state.omerStore.socialNetworks);
 
   useEffect(() => {
     dispatch(actions.loadProjects());
     dispatch(actions.loadTimePoints());
+    dispatch(actions.loadSocialNetworks());
   });
 
   return (
     <div className="main">
-      {/* <MyApps projects={projects} /> */}
+      <MyApps projects={projects} />
       <Background timePoints={timePoints} />
       <Knowledge />
       <Technology />
-      <SocialNetworks />
+      <SocialNetworks socialNetworks={socialNetworks} />
       <AboutMe />
     </div>
   );

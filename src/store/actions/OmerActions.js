@@ -8,6 +8,14 @@ function loadTimePoints() {
   }
 }
 
+function loadSocialNetworks() {
+  return async (dispatch) => {
+    const socialNetworks = await OmerService.getSocialNetworks();
+    dispatch({ type: 'setSocialNetworks', payload: socialNetworks })
+  }
+}
+
 export default {
-  loadTimePoints,  
+  loadTimePoints,
+  loadSocialNetworks
 }

@@ -8,9 +8,11 @@ function MyApps({ projects }) {
     : <div style={{ gridColumn: '1/5' }}>'Wait for the Projects..'</div>
 
   return (
-    <ul className="my-apps">
-      {showProjects}
-    </ul>
+    <div className="projects">
+      <ul className="my-apps">
+        {showProjects}
+      </ul>
+    </div>
   );
 
 }

@@ -1,5 +1,10 @@
 .background {
-  padding-top: 20px;
+  padding: 0 0 16px 0;
+  font-size: 18px;
+  h2 {
+    padding: 16px 0;
+    direction: rtl;
+  }
   .time-point {
     padding: 0 8px 12px;
     .title {
@@ -18,7 +23,7 @@
       max-height: 216.5px;
       width: 50vw;
       height: 43.3vw;
-      margin: 0 auto 6px auto;
+      margin: 0 auto 0px auto;
       .text {
         direction: rtl;
         white-space: pre-wrap;
@@ -28,9 +33,13 @@
         z-index: 1;
         padding: 12px 10px;
         margin: 0px 28px;
+        .sub-title {
+          font-size: 1.5em;
+        }
       }
     }
     .description {
+      font-size: 1em;
       text-align: right;
       direction: rtl;
       white-space: pre-wrap;
@@ -43,20 +52,3 @@
     }
   }
 }
-
-// &:before,
-// &:after {
-//   @include pseudo;
-//   left: 0;
-//   width: 50%;
-//   border-left: 50px solid transparent;
-//   border-right: 50px solid transparent;
-// }
-// &:before {
-//   bottom: 50%;
-//   border-bottom: 86.6px solid #64c7cc;
-// }
-// &:after {
-//   top: 50%;
-//   border-top: 86.6px solid #64c7cc;
-// }
