@@ -24,9 +24,7 @@
   }
   h1 {
     padding: 3rem 0 1rem;
-  }
-  h1,p {
-    background-clip: content-box;
+    // background: linear-gradient(45deg, #000e35d1 20%, #5a0a0ad4 50%);
   }
   h2 {
     background-color: $clr8;
@@ -34,7 +32,11 @@
     margin: 0 0 2rem;
   }
   p {
+    // background: linear-gradient(45deg, #000e35d1 70%, #5a0a0ad4 90%);
     padding: 0 0 2rem;
+  }
+  h1,p {
+    background-clip: content-box;
   }
   .my-picture {
     position: relative;

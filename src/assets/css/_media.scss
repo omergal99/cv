@@ -27,16 +27,7 @@
 }
 
 @media (min-width: 500px) {
-  .background {
-    font-size: 22px;
-    .time-points {
-      .time-point {
-        .description {
-          font-size: 0.8em;
-        }
-      }
-    }
-  }
+  
 }
 
 @media (min-width: 768px) {
@@ -67,9 +58,7 @@
       max-width: 1540px;
       margin: 0 auto;
       .time-point {
-        .description {
-          width: 25vw;
-        }
+        width: 33%;
       }
     }
   }
@@ -101,29 +90,11 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1539px) {
-  .background {
-    .time-points {
-      .time-point {
-        .description {
-          max-width: 400px;
-          font-size: 0.8em;
-        }
-      }
-    }
-  }
+ 
 }
 
 @media (min-width: 1540px) {
-  .background {
-    .time-points {
-      .time-point {
-        .description {
-          max-width: 550px;
-          font-size: 1.1em;
-        }
-      }
-    }
-  }
+  
 }
 
 @media (min-width: 1024px) and (max-width: 1699px) {
@@ -157,15 +128,5 @@
   }
   .my-apps {
     max-width: 1820px;
-  }
-  .background {
-    .time-points {
-      .time-point {
-        .description {
-          max-width: 650px;
-          font-size: 1.4em;
-        }
-      }
-    }
   }
 }

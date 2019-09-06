@@ -1,54 +1,60 @@
 .background {
   padding: 0 0 16px 0;
-  font-size: 18px;
+  font-size: 1.125rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   h2 {
-    padding: 16px 0;
     direction: rtl;
+    padding: 1rem 0 3rem;
   }
-  .time-point {
-    padding: 0 8px 12px;
-    .title {
-      padding: 0 0 4px 0;
-      display: inline-block;
-    }
-    .hexagon {
-      clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-      background-image: url("../../../img/backgrounds/my background/hexigon background.png");
-      background-position: top;
-      background-size: cover;
-      background-color: #c2aada;
-      color: white;
-      position: relative;
-      max-width: 250px;
-      max-height: 216.5px;
-      width: 50vw;
-      height: 43.3vw;
-      margin: 0 auto 0px auto;
-      .text {
-        direction: rtl;
-        white-space: pre-wrap;
+  .time-points {
+    margin: 0 auto;
+    .time-point {
+      padding: 0 8px 12px;
+      .title {
+        padding: 0 0 4px 0;
+        display: inline-block;
+      }
+      .hexagon {
+        clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+        background-image: url("../../../img/backgrounds/my background/hexigon background.png");
+        background-position: top;
+        background-size: cover;
+        background-color: #c2aada;
+        color: white;
         position: relative;
-        height: 100%;
-        overflow: hidden;
-        z-index: 1;
-        padding: 12px 10px;
-        margin: 0px 28px;
-        .sub-title {
-          font-size: 1.5em;
+        max-width: 250px;
+        max-height: 216.5px;
+        width: 50vw;
+        height: 43.3vw;
+        margin: 0 auto 0px auto;
+        .text {
+          direction: rtl;
+          white-space: pre-wrap;
+          position: relative;
+          height: 100%;
+          overflow: hidden;
+          z-index: 1;
+          padding: 12px 10px;
+          margin: 0px 28px;
+          .sub-title {
+            font-size: 1.5em;
+          }
         }
       }
-    }
-    .description {
-      font-size: 1em;
-      text-align: right;
-      direction: rtl;
-      white-space: pre-wrap;
-      width: 70vw;
-      max-width: 450px;
-      margin: 0 auto;
-      background-color: #d8d4d7;
-      padding: 3px 6px;
-      border-radius: 4px;
+      .description {
+        font-size: 1.2rem;
+        text-align: right;
+        direction: rtl;
+        white-space: pre-wrap;
+        width: 90%;
+        margin: 0 auto;
+        background-color: #d8d4d7;
+        padding: 3px 6px;
+        border-radius: 4px;
+      }
     }
   }
 }
