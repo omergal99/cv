@@ -1,21 +1,40 @@
 .background {
-  padding: 0 0 16px 0;
+  // padding: 0 0 16px 0;
   font-size: 1.125rem;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  .bc-image {
+    background-image: url(https://images.wallpaperscraft.com/image/mug_steam_macro_136401_3840x2160.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(0px);
+  }
   h2 {
     direction: rtl;
-    padding: 1rem 0 3rem;
+    background-color: #ffffffed;
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+    margin: 1rem auto 3rem auto;
   }
   .time-points {
+    padding: 0 0 16px 0;
     margin: 0 auto;
     .time-point {
       padding: 0 8px 12px;
       .title {
         padding: 0 0 4px 0;
         display: inline-block;
+        background-color: #ffffffed;
+        padding: 2px 6px;
+        border-radius: 2px;
       }
       .hexagon {
         clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
@@ -50,6 +69,7 @@
         direction: rtl;
         white-space: pre-wrap;
         width: 90%;
+        max-width: 70vw;
         margin: 0 auto;
         background-color: #d8d4d7;
         padding: 3px 6px;

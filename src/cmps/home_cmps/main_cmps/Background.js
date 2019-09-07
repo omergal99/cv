@@ -10,6 +10,7 @@ function Background({ timePoints }) {
 
   return (
     <div className="background">
+      <div className="bc-image"></div>
       <h2>מה הרקע שלי?</h2>
       <ul className="time-points">
         {showTimePoints}

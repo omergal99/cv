@@ -61,7 +61,7 @@ const initialState = {
       description: 'Lots of little games.\nMinesweeper, chess, Pacman, bookstore, and more.',
       desktopImg: 'assets/img/apps/protfolio/desktop.png',
       mobileImg: 'assets/img/apps/protfolio/mobile.png',
-      links: {github: 'https://github.com/omergal99/my-protofilio', website: 'https://omergal99.github.io/my-protofilio/'},
+      links: {github: 'https://github.com/omergal99/little-games', website: 'https://omergal99.github.io/little-games/'},
       tags: ['Vanilla.js', 'CRUDL', 'Bootstrap', 'font-awesome', 'jQuery']
     },
     {
