@@ -2,7 +2,7 @@
 
 WebLink: https://omergal99.github.io/cv/#/
 
-All my projects I made with little about myself. Enjoy!
+All my projects I made, Some with Server and DB, with Responsive design also about myself :)
 
 ## Explanation - work with Redux Hooks
 
