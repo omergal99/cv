@@ -1,5 +1,9 @@
 # My portfolio cv
 
+WebLink: https://omergal99.github.io/cv/#/
+
+On the site I present all the projects I have done with what I am working on and a little about myself. Enjoy!
+
 ## Explanation - work with Redux Hooks
 
 ### USE Node version v10.15.3
