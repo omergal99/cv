@@ -1,10 +1,19 @@
 .projects {
   background-color: #1c4153c9;
+  > h2 {
+    color: rgb(250, 250, 250);
+    font-size: 2rem;
+    padding: 2rem 1rem 0.8rem;
+  }
+  > p {
+    color: rgb(250, 250, 250);
+    padding: 0 1rem 2rem;
+  }
   .my-apps {
     padding: 1rem 0.5rem 0.5rem;
     margin: 0 auto;
     .my-app {
-      padding: 0 0 0.4em 0;
+      padding: 0 0 0.4rem 0;
       .wrap-img {
         padding: 0 0 0 10%;
         position: relative;
@@ -33,6 +42,7 @@
         .container {
           position: relative;
           color: #141414;
+          padding: 0 0 0.8rem 0;
           .explain {
             background-color: #faf6f6f2;
             border-radius: 4px;
@@ -46,7 +56,7 @@
               padding: 4px 0 2px 0px;
             }
             p {
-              font-size: .9rem;
+              font-size: 0.9rem;
               min-height: 5em;
               text-align: left;
               padding: 0px 4px 2px;
@@ -69,7 +79,7 @@
               a {
                 display: inline-block;
                 margin: 0px 2px;
-                transition: all .3s;
+                transition: all 0.3s;
                 &:hover img {
                   background-color: #bff4f1;
                 }
@@ -85,7 +95,7 @@
                   text-decoration: underline;
                   color: #0041e8;
                   font-family: fontry_speed, Arial, Helvetica, sans-serif;
-                  transition: all .3s;
+                  transition: all 0.3s;
                   &:hover {
                     background-color: #bdbdbd;
                     color: blue;

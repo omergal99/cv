@@ -9,6 +9,8 @@ function MyApps({ projects }) {
 
   return (
     <div className="projects">
+      <h2>My projects</h2>
+      <p>All my projects I made. Some with Server and DB, Responsive design.</p>
       <ul className="my-apps">
         {showProjects}
       </ul>

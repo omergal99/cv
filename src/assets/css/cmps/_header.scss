@@ -15,15 +15,10 @@
     right: 0;
     z-index: -10;
   }
-  h1,
-  h2,
-  p {
-    background-color: $clr7;
-    padding: 0 0 2rem;
-    direction: rtl;
-  }
   h1 {
     padding: 3rem 0 1rem;
+    background-color: $clr7;
+    background-clip: content-box;
     // background: linear-gradient(45deg, #000e35d1 20%, #5a0a0ad4 50%);
   }
   h2 {
@@ -32,11 +27,15 @@
     margin: 0 0 2rem;
   }
   p {
-    // background: linear-gradient(45deg, #000e35d1 70%, #5a0a0ad4 90%);
-    padding: 0 0 2rem;
-  }
-  h1,p {
+    background-color: $clr7;
     background-clip: content-box;
+    padding: 0 0 2rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    span {
+      font-weight: normal;
+      font-size: 1.3rem;
+    }
   }
   .my-picture {
     position: relative;

@@ -1,22 +1,17 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Omer CV",
+  "name": "Omer Gal CV",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logo128.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "type": "image/png"
     },
     {
       "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }	    
+      "sizes": "512x512 192x192 144x144",
+      "type": "image/png"
+    }
   ],
   "start_url": ".",
   "display": "standalone",

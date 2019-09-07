@@ -4,7 +4,7 @@ function Header() {
 
   return (
     <div className="header">
-      <h1>שלום! אני עומר</h1>
+      <h1>Hello! I'm Omer</h1>
       <div className="my-picture">
         <div className="wrap-color">
           <div className="wrap-img">
@@ -12,8 +12,8 @@ function Header() {
           </div>
         </div>
       </div>
-      <h2>מפתח אפליקציות ואתרים <span style={{ display: 'inline-block' }}>Fullstack Developer</span></h2>
-      <p>מוזמנים להסתכל 😋</p>
+      <h2>Full-stack Developer</h2>
+      <p>React.js <span>Hooks & Redux</span> - Node.js - MongoDB</p>
     </div>
   );
 }
