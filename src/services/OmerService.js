@@ -50,14 +50,10 @@ const initialState = {
   ]
 }
 
-function getTimePoints() {
-  return Promise.resolve(initialState)
-}
-function getSocialNetworks() {
+function getOmerInit() {
   return Promise.resolve(initialState)
 }
 
 export default {
-  getTimePoints,
-  getSocialNetworks
+  getOmerInit,
 }

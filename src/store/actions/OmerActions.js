@@ -1,21 +1,13 @@
 import OmerService from '../../services/OmerService';
 
 
-function loadTimePoints() {
+function loadOmerStore() {
   return async (dispatch) => {
-    const timePoints = await OmerService.getTimePoints();
-    dispatch({ type: 'setTimePoints', payload: timePoints })
-  }
-}
-
-function loadSocialNetworks() {
-  return async (dispatch) => {
-    const socialNetworks = await OmerService.getSocialNetworks();
-    dispatch({ type: 'setSocialNetworks', payload: socialNetworks })
+    const omerInit = await OmerService.getOmerInit();
+    dispatch({ type: 'setOmerInit', payload: omerInit })
   }
 }
 
 export default {
-  loadTimePoints,
-  loadSocialNetworks
+  loadOmerStore,
 }

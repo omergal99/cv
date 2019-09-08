@@ -20,6 +20,7 @@
         .desktop {
           display: block;
           max-height: 600px;
+          min-height: 250px;
           width: 100%;
           object-fit: cover;
           object-position: top;
@@ -117,7 +118,7 @@
             flex-wrap: wrap;
             align-self: start;
             margin: 6px 0 0 0;
-            max-height: 2.625rem;
+            max-height: 2.8rem;
             overflow: auto;
             span {
               display: inline-block;

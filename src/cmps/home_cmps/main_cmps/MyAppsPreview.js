@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 function MyAppsPreview({ project }) {
 
@@ -7,19 +7,16 @@ function MyAppsPreview({ project }) {
     return <span key={tag}>{tag}</span>
   })
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
   useEffect(() => {
+    let windowWidth = window.innerWidth;
     pText.current.style.setProperty('--h', pText.current.clientHeight + 2 + 'px');
     const updatePHeight = () => {
-      pText.current.style.setProperty('--h', pText.current.clientHeight + 2 + 'px');
+      if (pText.current) pText.current.style.setProperty('--h', pText.current.clientHeight + 2 + 'px');
     };
-    var resizeId;
     window.addEventListener('resize', (ev) => {
       if (windowWidth !== ev.currentTarget.innerWidth) {
-        clearTimeout(resizeId);
-        resizeId = setTimeout(updatePHeight, 200);
-        setWindowWidth(ev.currentTarget.innerWidth);
+        updatePHeight();
+        windowWidth = ev.currentTarget.innerWidth;
       }
     });
     return () => {
@@ -39,7 +36,7 @@ function MyAppsPreview({ project }) {
         <div className="container">
           <div className="explain">
             <h4>{project.name}</h4>
-            <p ref={pText}>{project.description}</p>
+            <p className="lalal" ref={pText}>{project.description}</p>
             <div className="links">
               <a href={project.links.github}><img src="assets/img/icons/github-logo.png" alt="Github" title="Github" /></a>
               <a href={project.links.website}><span>Web</span></a>

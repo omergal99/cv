@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { useSelector, useDispatch, useStore } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import actions from '../../store/actions';
 
 import MyApps from './main_cmps/MyApps';
@@ -19,8 +19,7 @@ function Main() {
 
   useEffect(() => {
     dispatch(actions.loadProjects());
-    dispatch(actions.loadTimePoints());
-    dispatch(actions.loadSocialNetworks());
+    dispatch(actions.loadOmerStore());
   });
 
   return (
