@@ -117,15 +117,15 @@ function getProjects() {
   // setTimeout(() => {
   //   return Promise.resolve(initialState)
   // }, 2000)
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(initialState);
+    }, 5000)
+  })
   // return new Promise((resolve) => {
-  //   setTimeout(() => {
-  //     resolve(initialState);
-  //   }, 10000)
-  // })
-  // return new Promise((resolve) => {
   //     resolve(initialState);
   // })
-  return Promise.resolve(initialState)
+  // return Promise.resolve(initialState)
 }
 
 

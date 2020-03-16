@@ -15,8 +15,8 @@ function MyAppsPreview({ project }) {
     };
     window.addEventListener('resize', (ev) => {
       if (windowWidth !== ev.currentTarget.innerWidth) {
-        updatePHeight();
         windowWidth = ev.currentTarget.innerWidth;
+        updatePHeight();
       }
     });
     return () => {
