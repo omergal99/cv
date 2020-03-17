@@ -6,7 +6,7 @@ All my projects I made, Some with Server and DB, with Responsive design also abo
 
 ## Explanation - work with Redux Hooks
 
-### USE Node version v10.15.3
+### USE Node version v12.13.0
 
 Im use yarn so we need to install it:
 ### `npm i -g yarn` or not globaly: `npm i yarn`

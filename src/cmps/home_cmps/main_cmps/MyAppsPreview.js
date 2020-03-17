@@ -36,7 +36,7 @@ function MyAppsPreview({ project }) {
         <div className="container">
           <div className="explain">
             <h4>{project.name}</h4>
-            <p className="lalal" ref={pText}>{project.description}</p>
+            <p className="text" ref={pText}>{project.description}</p>
             <div className="links">
               <a href={project.links.github}><img src="assets/img/icons/github-logo.png" alt="Github" title="Github" /></a>
               <a href={project.links.website}><span>Web</span></a>

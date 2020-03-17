@@ -15,8 +15,11 @@ function MyApps({ projects }) {
     tags: []
   }
 
-  const showProjects = projects ? projects.map(project => <MyAppsPreview project={project} key={project._id} />)
-    : empty12.map((empty, idx) => <MyAppsPreview project={emptyProj} key={idx} />)
+  const showProjects = projects
+    ? projects.map(project => <MyAppsPreview project={project} key={project._id} />)
+    : empty12.map((empty, idx) => <MyAppsPreview project={emptyProj} key={idx} />);
+
+  // const showProjects = empty12.map((empty, idx) => <MyAppsPreview project={emptyProj} key={idx} />);
 
   // const showProjects = projects ? projects.map(project => <MyAppsPreview project={project} key={project._id} />)
   //   : <div style={{ gridColumn: '1/5' }}>'Wait for the Projects..'</div>
