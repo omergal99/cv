@@ -27,7 +27,6 @@
 }
 
 @media (min-width: 500px) {
-  
 }
 
 @media (min-width: 768px) {
@@ -36,7 +35,7 @@
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     grid-gap: 10px;
     margin: 0 auto;
-    .my-app{
+    .my-app {
       min-height: 360px;
     }
   }
@@ -73,31 +72,33 @@
       max-width: 1540px;
       margin: 0 auto;
       .network {
-      .net-icon {
-        a {
-          img {
-            padding: 4px 6px;
-              border-bottom: none;
-          }
-          &:hover {
+        .net-icon {
+          a {
             img {
-              padding: 4px 6px 2px;
-              border-bottom: 2px solid #539dff;
+              padding: 4px 6px;
+              border-bottom: none;
+            }
+            &:hover {
+              img {
+                padding: 4px 6px 2px;
+                border-bottom: 2px solid #539dff;
+              }
             }
           }
         }
       }
     }
-    }
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1539px) {
- 
 }
 
 @media (min-width: 1540px) {
-  
+  .projects .hello-corona {
+    padding: 1rem 7.5rem 0.5rem 0.5rem;
+    max-width: 1340px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1699px) {
