@@ -31,11 +31,15 @@ function MyApps({ projects }) {
 
   return (
     <div className="projects">
-      <h2>My projects</h2>
-      <p>All my projects I made. Some with Server and DB, Responsive design.</p>
+
+      <h2>Corona Virus App (Covid-19)</h2>
+      <p>With information about the infecteds in each country</p>
       <div className="hello-corona">
         <MyAppsPreview project={corona} key={corona._id} />
       </div>
+
+      <h2>More Projects</h2>
+      <p>All my projects I made. Some with Server and DB, Responsive design</p>
       <ul className="my-apps">
         {showProjects}
       </ul>

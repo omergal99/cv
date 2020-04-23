@@ -125,6 +125,9 @@
   .my-apps {
     max-width: 1820px;
   }
+  .projects .hello-corona {
+    max-width: 1540px;
+  }
 }
 @media (min-width: 2400px) {
   html {
@@ -132,5 +135,8 @@
   }
   .my-apps {
     max-width: 1820px;
+  }
+  .projects .hello-corona {
+    max-width: 1740px;
   }
 }
