@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-
 function MyAppsPreview({ project }) {
 
   const pText = useRef(null);

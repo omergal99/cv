@@ -3,9 +3,13 @@
   "name": "cv",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=12.13.0",
+    "yarn": "^1.21.1"
+  },
   "dependencies": {
     "gh-pages": "^2.1.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
