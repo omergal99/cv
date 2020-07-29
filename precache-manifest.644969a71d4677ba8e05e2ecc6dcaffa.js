@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68a1909fa9290affd42a62b31b7f62e4",
+    "revision": "d260ce56bf8b7d582f52baff0cb22737",
     "url": "/cv/index.html"
   },
   {
-    "revision": "1f5e5ee0c777da70e6dd",
-    "url": "/cv/static/css/main.65e4685d.chunk.css"
+    "revision": "ce746c78d3e96434e421",
+    "url": "/cv/static/css/main.9556dadf.chunk.css"
   },
   {
     "revision": "de4ef589b07d7b474a24",
     "url": "/cv/static/js/2.eb2688c4.chunk.js"
   },
   {
-    "revision": "1f5e5ee0c777da70e6dd",
+    "revision": "ce746c78d3e96434e421",
     "url": "/cv/static/js/main.6eb8361e.chunk.js"
   },
   {
@@ -50,5 +50,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "74ea8e506a69268802f168d652f8c864",
     "url": "/cv/static/media/hexigon background2.74ea8e50.png"
+  },
+  {
+    "revision": "d80092dfba45705453536a4a092481c6",
+    "url": "/cv/static/media/hud background.d80092df.jpg"
   }
 ]);
