@@ -2,7 +2,7 @@ import React from 'react';
 
 import SocialNetworkPreview from './SocialNetworkPreview';
 
-function SocialNetworks({socialNetworks}) {
+function SocialNetworks({ socialNetworks = [] }) {
 
   // return (
   //   <div className="social-networks">
@@ -10,17 +10,17 @@ function SocialNetworks({socialNetworks}) {
   //   </div>
   // );
 
-  const showSocialNetworks = socialNetworks ?
-  socialNetworks.map(socialNetwork => <SocialNetworkPreview socialNetwork={socialNetwork} key={socialNetwork._id} />)
-  : <div>'Wait time Social Network..'</div>
+  const showSocialNetworks = socialNetworks.map(socialNetwork => {
+    return <SocialNetworkPreview socialNetwork={socialNetwork} key={socialNetwork._id} />
+  })
 
-return (
-  <div className="social-networks">
-    <ul className="networks">
-      {showSocialNetworks}
-    </ul>
-  </div>
-);
+  return (
+    <div className="social-networks">
+      <ul className="networks">
+        {showSocialNetworks}
+      </ul>
+    </div>
+  );
 
 }
 

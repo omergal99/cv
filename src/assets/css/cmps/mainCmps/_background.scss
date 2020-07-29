@@ -6,9 +6,11 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  color: white;
   .bc-image {
-    background-image: url(https://images.wallpaperscraft.com/image/mug_steam_macro_136401_3840x2160.jpg);
-    background-position: top;
+    // background-image: url();
+    background-image: url(https://themepack.me/i/c/749x468/media/g/1724/hud-theme-aj1.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,7 +22,7 @@
   }
   h2 {
     direction: rtl;
-    background-color: #ffffffed;
+    background-color: #5c5c5ded;
     padding: 0.1rem 0.4rem;
     border-radius: 2px;
     margin: 1rem auto 3rem auto;
@@ -33,17 +35,17 @@
       .title {
         padding: 0 0 4px 0;
         display: inline-block;
-        background-color: #ffffffed;
+        background-color: #5c5c5ded;
         padding: 2px 6px;
-        border-radius: 2px;
+        background: linear-gradient(135deg, transparent 9%, #5c5c5ded 0, #5c5c5ded 91%, transparent 0);
       }
       .hexagon {
         clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-        background-image: url("../../../img/backgrounds/my background/hexigon background.png");
+        background-image: url("../../../img/backgrounds/my background/hexigon background2.png");
         background-position: top;
-        background-size: cover;
         background-color: #c2aada;
-        color: white;
+        background-color: transparent;
+        background-size: 162%;
         position: relative;
         max-width: 250px;
         max-height: 216.5px;
@@ -72,7 +74,7 @@
         width: 90%;
         max-width: 70vw;
         margin: 0 auto;
-        background-color: #d8d4d7;
+        background-color: #333233;
         padding: 3px 6px;
         border-radius: 4px;
       }

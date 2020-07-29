@@ -36,16 +36,22 @@ function MyAppsPreview({ project }) {
           <div className="explain">
             <h4>{project.name}</h4>
             <p className="text" ref={pText}>{project.description}</p>
-            <div className="links">
-              <a href={project.links.github}><img src="assets/img/icons/github-logo.png" alt="Github" title="Github" /></a>
-              <a href={project.links.website}><span>Web</span></a>
+            <div className="links" style={{ height: project.links.github ? '' : '2rem' }}>
+              {project.links.github &&
+                <a href={project.links.github}>
+                  <img src="assets/img/icons/github-logo.png" alt="Github" title="Github" />
+                </a>
+              }
+              <a href={project.links.website}>
+                <span>Web</span>
+              </a>
               {/* <a href={project.links.website}><img src="assets/img/icons/webLink.png" alt="Website" title="Website" /></a> */}
             </div>
             <div className="tags">{tags}</div>
           </div>
         </div>
       </div>
-    </li>
+    </li >
   );
 }
 

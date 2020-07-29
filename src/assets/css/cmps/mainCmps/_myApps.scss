@@ -22,7 +22,7 @@
         padding: 0 0 0 15%;
         .desktop,
         .mobile {
-          border: 2px solid #4095bf;
+          border: 1px solid #4095bf;
         }
       }
     }
@@ -39,7 +39,7 @@
         width: 100%;
         object-fit: cover;
         object-position: top;
-        border: 3px solid maroon;
+        border: 1px solid lightsteelblue;
         border-radius: 4px;
       }
       .mobile {
@@ -47,7 +47,7 @@
         position: absolute;
         left: 0;
         top: 15%;
-        border: 2px solid maroon;
+        border: 1px solid lightsteelblue;
         border-radius: 4px;
       }
     }
@@ -65,7 +65,7 @@
           position: relative;
           top: -40px;
           left: 0;
-          border: 2px solid #165c59;
+          border: 1px solid lightsteelblue;
           width: 80%;
           margin: 0 10px auto auto;
           h4 {
@@ -138,7 +138,7 @@
           span {
             display: inline-block;
             font-size: 0.8em;
-            background-color: #2c8581;
+            background-color: #2d4e86;
             margin: 1.5px 2px;
             padding: 1px 4px;
             border-radius: 6px;

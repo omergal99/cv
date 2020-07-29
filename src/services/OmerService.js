@@ -6,7 +6,9 @@ const initialState = {
       subtitle: '10 יחידות\nמחשבים',
       description: '5 יחידות #C, ו5 יחידות פרויקט לסינון רעשים מתמונה בMATLAB במכון HIT בחולון מטעם מכון ויצמן.',
       icons: ['url', 'url'],
-      blendMode: 'luminosity'
+      filter: 'sepia(1)',
+      rotateDeg: 180,
+      bcPosition: '-48px -93px'
     },
     {
       _id: 4002,
@@ -14,7 +16,9 @@ const initialState = {
       subtitle: 'מנהל אתר\nהמילואים',
       description: 'סרן בתפקיד 3 שנים, בפיקודי צוות של 4 חיילים.\nהעלאת גרסאות, טיפול בתקלות, ניטורים, בקרה, אינפורמטיקה, XMLים, ועוד.',
       icons: ['url', 'url'],
-      blendMode: 'normal'
+      filter: 'none',
+      rotateDeg: 300,
+      bcPosition: '-19px 2px'
     },
     {
       _id: 4003,
@@ -22,7 +26,9 @@ const initialState = {
       subtitle: 'קורס תכנות\nFullstack Developer',
       description: 'קורס תכנות מקיף, מפתח Fullstack Developer.\nלימוד מהיסודות עד לטכנולוגיות מתקדמות.',
       icons: ['url', 'url'],
-      blendMode: 'hard-light'
+      filter: 'sepia(1)',
+      rotateDeg: 60,
+      bcPosition: 'left'
     },
   ],
   socialNetworks: [
