@@ -14,7 +14,7 @@ const initialState = {
       _id: 4002,
       title: 'צבא',
       subtitle: 'מנהל אתר\nהמילואים',
-      description: 'סרן בתפקיד 3 שנים, בפיקודי צוות של 4 חיילים.\nהעלאת גרסאות, טיפול בתקלות, ניטורים, בקרה, אינפורמטיקה, XMLים, ועוד.',
+      description: 'קצין בדרגת סרן, ראש צוות ל4 חיילים.\n3 שנים בתפקיד עשיר ומאתגר.\nהעלאת גרסאות, ניהול המוצר, אתר מותאם, ניטורים, תכנון מוצר והגדרת תכולות, ייצוב האתר, בקרה, ועוד.',
       icons: ['url', 'url'],
       filter: 'none',
       rotateDeg: 300,
@@ -23,8 +23,8 @@ const initialState = {
     {
       _id: 4003,
       title: 'אזרחות',
-      subtitle: 'קורס תכנות\nFullstack Developer',
-      description: 'קורס תכנות מקיף, מפתח Fullstack Developer.\nלימוד מהיסודות עד לטכנולוגיות מתקדמות.',
+      subtitle: 'Full-stack\nBootcamp',
+      description: 'קורס תכנות אינטנסיבי, 4 חודשים.\nלמידה של הטכנולוגיות המתקדמות בעולם הWeb.',
       icons: ['url', 'url'],
       filter: 'sepia(1)',
       rotateDeg: 60,
@@ -33,18 +33,18 @@ const initialState = {
   ],
   socialNetworks: [
     {
-      _id: 5002,
-      title: 'Stack Overflow',
-      icon: 'assets/img/icons/StackOverflow.png',
-      img: 'assets/img/profile/StackOverflow Profile.png',
-      link: 'https://stackoverflow.com/users/10869929/omer',
-    },
-    {
       _id: 5003,
       title: 'LinkedIn',
       icon: 'assets/img/icons/LinkedIn.png',
       img: 'assets/img/profile/LinkedIn Profile.png',
       link: 'https://www.linkedin.com/in/omergal99/',
+    },
+    {
+      _id: 5002,
+      title: 'Stack Overflow',
+      icon: 'assets/img/icons/StackOverflow.png',
+      img: 'assets/img/profile/StackOverflow Profile.png',
+      link: 'https://stackoverflow.com/users/10869929/omer',
     },
     {
       _id: 5001,
