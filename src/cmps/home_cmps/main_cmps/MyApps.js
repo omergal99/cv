@@ -2,33 +2,30 @@ import React from 'react';
 
 import MyAppsPreview from './MyAppsPreview';
 
-function MyApps({ projects }) {
+const emptyProjects = Array.from(Array(12));
 
-  const empty12 = Array.from(Array(12));
+const emptyProject = {
+  name: 'Project Name',
+  description: 'Description',
+  desktopImg: '',
+  mobileImg: '',
+  links: { github: '', website: '' },
+  tags: []
+}
 
-  const emptyProj = {
-    name: 'Project Name',
-    description: 'Description',
-    desktopImg: '',
-    mobileImg: '',
-    links: { github: '', website: '' },
-    tags: []
-  }
+const corona = {
+  _id: 'corona',
+  name: 'Hello Corona',
+  description: 'Impressive view of the world countries on Map.\nCheck status of your country situation by the Corona virus.\nCheck the color changer, open the speakers and select country, play with the map and graph data.',
+  desktopImg: 'assets/img/apps/hello corona/desktop.png',
+  mobileImg: 'assets/img/apps/hello corona/mobile.png',
+  links: { github: 'https://github.com/omergal99/hello-corona', website: 'https://omergal99.github.io/hello-corona' },
+  tags: ['React', 'Hooks', 'Redux', 'Responsive', 'SVG-Map', 'Corona virus', 'Heroku API']
+}
 
-  const showProjects = projects
-    ? projects.map(project => <MyAppsPreview project={project} key={project._id} />)
-    : empty12.map((empty, idx) => <MyAppsPreview project={emptyProj} key={idx} />);
 
-  const corona = {
-    _id: 'corona',
-    name: 'Hello Corona',
-    description: 'Impressive view of the world countries on Map.\nCheck status of your country situation by the Corona virus',
-    desktopImg: 'assets/img/apps/hello corona/desktop.png',
-    mobileImg: 'assets/img/apps/hello corona/mobile.png',
-    links: { github: 'https://github.com/omergal99/hello-corona', website: 'https://omergal99.github.io/hello-corona' },
-    tags: ['React', 'Hooks', 'Redux', 'Responsive', 'SVG-Map', 'Corona virus', 'Heroku API']
-  }
-
+function MyApps(props) {
+  const { projects } = props;
   return (
     <div className="projects">
 
@@ -41,7 +38,9 @@ function MyApps({ projects }) {
       <h2>More Projects</h2>
       <p>All my projects I made. Some with Server and DB, Responsive design</p>
       <ul className="my-apps">
-        {showProjects}
+        {projects
+          ? projects.map(project => <MyAppsPreview project={project} key={project._id} />)
+          : emptyProjects.map((_, idx) => <MyAppsPreview project={emptyProject} key={idx} />)}
       </ul>
     </div>
   );

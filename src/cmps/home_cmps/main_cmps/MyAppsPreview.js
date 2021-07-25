@@ -42,10 +42,14 @@ function MyAppsPreview({ project }) {
                   <img src="assets/img/icons/github-logo.png" alt="Github" title="Github" />
                 </a>
               }
-              <a href={project.links.website}>
+              <a href={project.links.website} title={project.links.website} >
                 <span>Web</span>
               </a>
-              {/* <a href={project.links.website}><img src="assets/img/icons/webLink.png" alt="Website" title="Website" /></a> */}
+              {project.links.gcp &&
+                <a href={project.links.gcp} title={project.links.gcp} >
+                  <span>GCP</span> 
+                </a>
+              }
             </div>
             <div className="tags">{tags}</div>
           </div>

@@ -4,11 +4,11 @@ const initialState = {
     {
       _id: '101',
       name: 'Parties App',
-      description: 'Watch for interesting parties taking place soon.\nOrder tickets and create your party!',
+      description: 'Watch for interesting parties taking place soon. Order tickets and create your party!\nGCP link to my Domain using compute engine.',
       desktopImg: 'assets/img/apps/parties/desktop.png',
       mobileImg: 'assets/img/apps/parties/mobile.png',
-      links: { github: '', website: 'https://parties-app.herokuapp.com' },
-      tags: ['Material-UI', 'Material-Table', 'React', 'Node.js', 'MongoDB', 'Mongoose', 'Google Map']
+      links: { github: '', website: 'https://parties-app.herokuapp.com', gcp: 'https://beetroot.cyou/' },
+      tags: ['Material-UI', 'Material-Table', 'React', 'Node.js', 'MongoDB', 'Mongoose', 'Google Map', 'GCP']
     },
     {
       _id: '102',
