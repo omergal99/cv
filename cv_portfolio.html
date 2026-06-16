@@ -58,39 +58,52 @@
     <!-- Top Navigation -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-extrabold tracking-tight text-blue-900">OMER<span class="text-cyan-600">GAL</span>
-            </div>
-            <nav class="flex space-x-6 text-sm font-bold text-slate-600">
+            <div class="text-xl font-extrabold tracking-tight text-blue-900">OMER<span class="text-cyan-600">GAL</span></div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 text-sm font-bold text-slate-600">
                 <a href="#about" class="hover:text-blue-700 transition-colors">About</a>
                 <a href="#impact" class="hover:text-blue-700 transition-colors">Impact</a>
                 <a href="#experience" class="hover:text-blue-700 transition-colors">Experience</a>
                 <a href="#skills" class="hover:text-blue-700 transition-colors">Skills</a>
                 <a href="#ai-interactivity" class="hover:text-blue-700 transition-colors">AI Core</a>
-                <a href="#vision"
-                    class="hover:text-cyan-600 transition-colors bg-cyan-50 text-cyan-700 px-2 py-0 rounded-full">Next
-                    Role</a>
+                <a href="#vision" class="hover:text-cyan-600 transition-colors bg-cyan-50 text-cyan-700 px-2 py-0 rounded-full">Next Role</a>
             </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="block md:hidden text-slate-600 hover:text-blue-700 focus:outline-none cursor-pointer">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dynamic Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-100 bg-white px-6 py-4 space-y-3 font-bold text-sm text-slate-600 brand-shadow-sm">
+            <a href="#about" class="block hover:text-blue-700 transition-colors">About</a>
+            <a href="#impact" class="block hover:text-blue-700 transition-colors">Impact</a>
+            <a href="#experience" class="block hover:text-blue-700 transition-colors">Experience</a>
+            <a href="#skills" class="block hover:text-blue-700 transition-colors">Skills</a>
+            <a href="#ai-interactivity" class="block hover:text-blue-700 transition-colors">AI Core</a>
+            <a href="#vision" class="inline-block hover:text-cyan-600 transition-colors bg-cyan-50 text-cyan-700 px-3 py-1 rounded-full mt-1">Next Role</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="about" class="gradient-bg border-b border-slate-100 py-16 px-6">
+    <section id="about" class="gradient-bg border-b border-slate-100 py-12 md:py-16 px-6">
         <div class="max-w-5xl mx-auto">
             <div class="max-w-3xl">
-                <!-- Status Badge (Fixed sizing to be clearly visible) -->
-                <div
-                    class="inline-flex items-center gap-2 px-4 py-1.5 text-xs font-bold text-blue-800 bg-blue-100/80 rounded-full border border-blue-200/50 mb-6">
-                    <span class="flex h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span> Actively Seeking:
-                    Senior Software Engineer / Value Multiplier Role / Tech Leadership / Staff Engineering Roles
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 text-xs font-bold text-blue-800 bg-blue-100/80 rounded-full border border-blue-200/50 mb-6 max-w-full">
+                    <span class="flex h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0"></span> 
+                    <span class="truncate">Actively Seeking: Senior Software Engineer / Value Multiplier Role / Tech Leadership / Staff Engineering Roles</span>
                 </div>
 
                 <!-- Main Headline -->
-                <h1 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4 leading-tight">
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight text-slate-900 mb-4 leading-tight">
                     Transforming Engineering Friction into <span class="text-gradient">Automated Scale</span>
                 </h1>
 
                 <!-- Sub-Headline -->
-                <p class="text-xl font-semibold text-slate-700 mb-6">
+                <p class="text-lg md:text-xl font-semibold text-slate-700 mb-6">
                     Senior Full-Stack & AI Engineer | 8+ Years Experience
                 </p>
 
@@ -102,32 +115,33 @@
                     a genuine technical force multiplier.
                 </p>
 
+                <!-- Responsive Buttons Area -->
                 <div class="bg-white/60 border border-slate-200/60 rounded-2xl p-4 mb-8 brand-shadow-sm">
-                    <div class="flex flex-wrap gap-3 mb-3">
+                    <div class="grid grid-cols-1 sm:flex sm:flex-wrap gap-3 mb-4">
                         <a href="mailto:omergal9999a@gmail.com"
-                            class="px-5 py-2.5 bg-blue-700 hover:bg-blue-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-700/20 transition-all flex items-center gap-2">
+                            class="px-5 py-2.5 bg-blue-700 hover:bg-blue-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-700/20 transition-all flex items-center justify-center sm:justify-start gap-2">
                             <i class="fa-solid fa-envelope"></i> Email Me
                         </a>
                         <a href="https://linkedin.com/in/omergal99" target="_blank"
-                            class="px-5 py-2.5 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold text-sm rounded-xl transition-all flex items-center gap-2 shadow-sm">
+                            class="px-5 py-2.5 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold text-sm rounded-xl transition-all flex items-center justify-center sm:justify-start gap-2 shadow-sm">
                             <i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn
                         </a>
                         <a href="https://github.com/omergal99" target="_blank"
-                            class="px-5 py-2.5 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold text-sm rounded-xl transition-all flex items-center gap-2 shadow-sm">
+                            class="px-5 py-2.5 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold text-sm rounded-xl transition-all flex items-center justify-center sm:justify-start gap-2 shadow-sm">
                             <i class="fa-brands fa-github text-slate-900"></i> GitHub
                         </a>
 
                         <!-- CV Download Buttons -->
                         <a href="https://omergal99.github.io/cv/omer%20cv%202026.pdf" download="Omer_Gal_CV_2026.pdf"
-                            class="px-5 py-2.5 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 font-bold text-sm rounded-xl transition-all flex items-center gap-2 shadow-sm">
+                            class="px-5 py-2.5 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 font-bold text-sm rounded-xl transition-all flex items-center justify-center sm:justify-start gap-2 shadow-sm">
                             <i class="fa-solid fa-file-pdf"></i> CV - PDF
                         </a>
                         <a href="https://omergal99.github.io/cv/omer%20cv%202026.docx" download="Omer_Gal_CV_2026.docx"
-                            class="px-5 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 font-bold text-sm rounded-xl transition-all flex items-center gap-2 shadow-sm">
+                            class="px-5 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 font-bold text-sm rounded-xl transition-all flex items-center justify-center sm:justify-start gap-2 shadow-sm">
                             <i class="fa-solid fa-file-word"></i> CV - Word
                         </a>
                     </div>
-                    <div class="flex flex-wrap gap-4 text-xs font-bold text-slate-600 pl-1">
+                    <div class="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-4 text-xs font-bold text-slate-600 pl-1">
                         <div><i class="fa-solid fa-at text-blue-600 mr-1"></i> omergal9999a@gmail.com</div>
                         <div><i class="fa-solid fa-phone text-emerald-600 mr-1"></i> +972-52-6407335</div>
                     </div>
@@ -452,8 +466,24 @@
         &copy; 2026 Omer Gal.
     </footer>
 
-    <!-- Interactive Terminal Simulation Script -->
+    <!-- Scripts -->
     <script>
+        // Mobile Menu Toggle Logic
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link inside it is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Interactive Terminal Simulation Script
         function simulateAgent(type) {
             const terminal = document.getElementById('agent-terminal');
             terminal.innerHTML = '';
